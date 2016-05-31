@@ -1,0 +1,25 @@
+{
+  "name": "Smart Bic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-lib": "^0.3.0",
+    "lodash": "^3.10.1",
+    "ssml": "0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://omenocal@bitbucket.org/omenocal/smart-bic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/omenocal/smart-bic/issues"
+  },
+  "homepage": "https://bitbucket.org/omenocal/smart-bic"
+}

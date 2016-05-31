@@ -1,0 +1,19 @@
+{
+  "name": "Smart Bic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Octavio Menocal Cordero",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-foreach": "^0.1.0",
+    "gulp-run": "^1.6.11",
+    "gulp-watch": "^4.3.5",
+    "gulp-zip": "^3.0.2"
+  }
+}
