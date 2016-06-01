@@ -17,10 +17,10 @@ var storageDynamoDB = (function () {
     }
 
     return {
-        load: function (session, callback, brand, model, year) {
+        load: function (session, brand, model, year, callback) {
             dynamodb.scan({
                 TableName: 'CarModels',
-                ProjectionExpression:"Item.Title, Item.Description",
+                ProjectionExpression:"Title, Description",
                 FilterExpression: "#brand = :brand and #model = :model and #year = :year",
                 ExpressionAttributeNames: {
                     "#brand": "Brand",
@@ -30,7 +30,7 @@ var storageDynamoDB = (function () {
                 ExpressionAttributeValues: {
                      ":brand": brand,
                      ":model": model,
-                     ":year": year 
+                     ":year": parseInt(year)
                 }
             }, function (err, data) {
                 var currentDynamoDB;

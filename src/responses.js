@@ -8,31 +8,51 @@ var responses = (function () {
 
 	return {
 
-		Word : {
+		Car : {
 
-			AskForStory : {
-				ask : "Do you want to build a story together?"
+			Welcome : {
+				ask : "What kind of specifications does your car have?",
+				reprompt: "Don't be shy. Tell me. What kind of specifications does your car have?"
+			},
+
+			NoRepeatMessage : {
+				ask : 		"Sorry, I've got nothing to repeat to you. Who do you want to know what time is coming home?"
 			},
 
 			NotUnderstood : {
-				ask : "Sorry, I didn't understand your word. Can you please try again?",
-				reprompt: "May you please repeat your word? I didn't hear well."
+				ask : "Sorry, I didn't understand some specifications. Can you please try again?",
+				reprompt: "May you please repeat the specifications of the car? I didn't hear well."
 			},
 
 			Error : {
-				tell: "I'm so sorry. There was a problem getting the stories. Please, try again later."
-			}
+				tell: "I'm so sorry. There was a problem getting the batteries. Please, try again later."
+			},
+
+			Pause : [
+				{
+					ask : "Ok, take your time",
+					reprompt : "Are you ready?"
+				},
+				{
+					ask : "Ok, I keep on waiting",
+					reprompt : "Are you done?"
+				},
+				{
+					ask : "Ok, just to confirm you are still there. Take your time.",
+					reprompt : "Should we continue?"
+				}
+			]
 
 		},
 
 		Exit : {
 
 			Cancel : {
-				tell : "Ok, feel free to reach out to me to build awesome stories together. <break time=\"1s\"/> Goodbye."
+				tell : "Ok, feel free to reach out to me to suggest you batteries for your car. <break time=\"1s\"/> Goodbye."
 			},
 
 			Stop : {
-				tell : "Ok, feel free to reach out to me to build awesome stories together. <break time=\"1s\"/> Goodbye."
+				tell : "Ok, feel free to reach out to me to suggest you batteries for your car. <break time=\"1s\"/> Goodbye."
 			}
 
 		},
@@ -41,10 +61,8 @@ var responses = (function () {
 		Help : {
 
 			MainMenu : {
-				ask : 	"The skill will randomly select a story every time you start. Each story has many missing words " +
-						"that you will have to fill in to hear the completed story. Alexa will ask you for the category " +
-						"of word, such as noun, verb, place, part of the body, etc. Respond by saying the first word or " +
-						"phrase that seems to fit. Do you want to continue?"
+				ask : 	"I can tell you the most appropiate battery for your car. Just tell me the model, the brand and the year, " +
+						"so I can look for the suggestions I've got in my knowledge. Tell me, what kind of car do you have?"
 			}
 
 		}

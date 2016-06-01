@@ -21,6 +21,15 @@
       ]
     },
     {
+      "intent": "BatteryIntent",
+      "slots": [
+        {
+          "name": "Battery",
+          "type": "LIST_OF_BATTERIES"
+        }
+      ]
+    },
+    {
       "intent": "AMAZON.ResumeIntent"
     },
     {

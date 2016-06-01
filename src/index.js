@@ -57,6 +57,10 @@ SmartBic.prototype.intentHandlers = {
         session.attributes.PAUSED = undefined;
         getBattery(intent, session, callback);
     },
+    "BatteryIntent": function (intent, session, callback) {
+        session.attributes.PAUSED = undefined;
+        getBatteryDescription(intent, session, callback);
+    },
     "AMAZON.PauseIntent": function (intent, session, callback) {
         session.attributes.PAUSED = 1;
         respond.withPlainText(responses.Simulation.Pause, callback);
@@ -94,7 +98,7 @@ SmartBic.prototype.intentHandlers = {
  * Getting welcome message
  */
 function getWelcomeMessage(session, callback) {
-    respond.withPlainText(responses.ComingHome.Welcome, callback);
+    respond.withPlainText(responses.Car.Welcome, callback);
 }
 
 
@@ -108,28 +112,108 @@ function getBattery(intent, session, callback) {
         var year = intent.slots.Year.value;
 
         if (isEmpty(brand) && isEmpty(model) && isEmpty(year)) {
-            respond.withPlainText(responses.Word.NotUnderstood, callback);
+            respond.withPlainText(responses.Car.NotUnderstood, callback);
             return;
         }
 
-        var askString;
-        var repromptString;
-        var isSSML = 0;
+        storageDynamoDB.load(session, brand, model, year, function (item) {
+            if(item.length === 0) {
+                respond.withPlainText(responses.Car.NotUnderstood, callback);
+                return;
+            }
 
-        // TODO Query database to find suggestions who match these parameters
+            if(item.length === 1) {
+                session.attributes.REPEAT_MESSAGE = "The " + item[0].Title + " battery for a " +
+                                                    brand + ", " + model + ", " + year + " is " +
+                                                    item[0].Description + ". What other battery would you like to look for?";
 
-        speech = {
-            ask: askString,
-            reprompt: repromptString
+                var speech = {
+                    ask:        session.attributes.REPEAT_MESSAGE,
+                    reprompt:   "What other battery would you like to look for?"
+                };
+
+                respond.withPlainText(speech, callback);
+            } else {
+                var askString = "I'm aware of " + item.length + " brands that fit your car specifications. "
+
+                for (var i = 0; i < item.length - 1; i++) {
+                    askString += item[i].Title + ", ";
+                }
+
+                askString += "and " + item[item.length - 1].Title + ". What battery brand do you prefer?";
+
+                session.attributes.REPEAT_MESSAGE = askString;
+                session.attributes.BATTERIES = item;
+                session.attributes.BRAND = brand;
+                session.attributes.MODEL = model;
+                session.attributes.YEAR = year;
+
+                var speech = {
+                    ask: askString,
+                    reprompt: "What battery brand do you prefer?"
+                };
+
+                respond.withPlainText(speech, callback);
+            }
+                
+        });
+
+    } else {
+        respond.withPlainText(responses.Car.NotUnderstood, callback);
+    }
+    
+}
+
+
+/**
+ * Getting battery suggestions from DynamoDB depending on filter fields
+ */
+function getBatteryDescription(intent, session, callback) {
+    if(intent.slots.Battery.value) {
+        var battery = intent.slots.Brand.value.toLowerCase();
+
+        if (isEmpty(battery)) {
+            var speech = {
+                ask:        "Sorry, I don't know that brand. " + session.attributes.REPEAT_MESSAGE,
+                reprompt:   "What battery brand do you prefer?"
+            };
+
+            respond.withPlainText(speech, callback);
+            return;
+        }
+
+        for (var i = 0; i < session.attributes.BATTERIES.length; i++) {
+            if(session.attributes.BATTERIES[i].Title === battery) {
+                session.attributes.REPEAT_MESSAGE = "The " + session.attributes.BATTERIES[i].Title + " battery for a " +
+                                                    session.attributes.BRAND + ", " +
+                                                    session.attributes.MODEL + ", " +
+                                                    session.attributes.YEAR + " is " +
+                                                    session.attributes.BATTERIES[i].Description +
+                                                    ". What other battery would you like to look for?";
+
+                session.attributes.BATTERIES = undefined;
+                session.attributes.BRAND = undefined;
+                session.attributes.MODEL = undefined;
+                session.attributes.YEAR = undefined;
+
+                var speech = {
+                    ask:        session.attributes.REPEAT_MESSAGE,
+                    reprompt:   "What other battery would you like to look for?"
+                };
+
+                respond.withPlainText(speech, callback);
+                return;
+            }
+
+        }
+
+    } else {
+        var speech = {
+            ask:        "Sorry, I don't know that brand. " + session.attributes.REPEAT_MESSAGE,
+            reprompt:   "What battery brand do you prefer?"
         };
 
-        if(isSSML === 1) {
-            respond.withSSML(speech, callback);
-        } else {
-            respond.withPlainText(speech, callback);
-        }
-    } else {
-        respond.withPlainText(responses.Word.NotUnderstood, callback);
+        respond.withPlainText(speech, callback);
     }
     
 }
@@ -144,7 +228,7 @@ function getRepeatMessage(session, callback) {
         };
         respond.withSSML(speech, callback);
     } else {
-        respond.withPlainText(responses.ComingHome.NoRepeatMessage, callback);
+        respond.withPlainText(responses.Car.NoRepeatMessage, callback);
     }
 }
 
@@ -158,7 +242,7 @@ function manageYesNoAnswer(session, callback, answerOption) {
             session.attributes.PAUSED = undefined;
             getWelcomeMessage(session, callback);
         } else {
-            respond.withPlainText(responses.Simulation.Pause, callback);
+            respond.withPlainText(responses.Car.Pause, callback);
         }
     } else {
         getWelcomeMessage(session, callback);

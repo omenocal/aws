@@ -1,0 +1,137 @@
+[{
+	"ID": 1277,
+	"Brand": "SEAT",
+	"Model": "Z Le (4 Ptas.)",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "LTH",
+		"Description": "L-42-500"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-47-550"
+	}]
+}, {
+	"ID": 1279,
+	"Brand": "SEAT",
+	"Model": "Le FR",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "LTH",
+		"Description": "L-42-500"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-47-550"
+	}]
+}, {
+	"ID": 1601,
+	"Brand": "TOYOTA",
+	"Model": "RAV4",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "LTH",
+		"Description": "L-24R-530"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-35-575"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-24R-530"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-35-575"
+	}]
+}, {
+	"ID": 1917,
+	"Brand": "PORSCHE",
+	"Model": "911 (50 Aniv.)",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "FULL POWER",
+		"Description": "FP-41-750"
+	}]
+}, {
+	"ID": 1918,
+	"Brand": "PORSCHE",
+	"Model": "911 GTR",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "FULL POWER",
+		"Description": "FP-41-750"
+	}]
+}, {
+	"ID": 1984,
+	"Brand": "ACURA",
+	"Model": "RLX",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "LTH",
+		"Description": "L-24R-530"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-35-575"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-24R-530"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-35-575"
+	}]
+}, {
+	"ID": 1994,
+	"Brand": "SMART",
+	"Model": "BRABUS",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "LTH",
+		"Description": "L-42-500"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-47-550"
+	}]
+}, {
+	"ID": 2454,
+	"Brand": "CHEVROLET",
+	"Model": "ENCORE (BUICK)",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "FULL POWER",
+		"Description": "FP-41-750"
+	}]
+}, {
+	"ID": 2455,
+	"Brand": "CHEVROLET",
+	"Model": "Corvette Stingrey",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "LTH",
+		"Description": "L-42-500"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-47-550"
+	}]
+}, {
+	"ID": 1188,
+	"Brand": "PEUGEOT",
+	"Model": "308CC",
+	"Year": 2014,
+	"Motor": "",
+	"Items": [{
+		"Titulo": "FULL POWER",
+		"Description": "FP-41-750"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-47-550"
+	}, {
+		"Titulo": "LTH",
+		"Description": "L-47-550"
+	}]
+}]

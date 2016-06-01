@@ -199,6 +199,21 @@ CarIntent i want a battery for a {Model} {Year} {Brand} please
 CarIntent i want a battery for a {Year} {Model} {Brand} please
 CarIntent i want a battery for a {Year} {Brand} {Model} please
 
+BatteryIntent {Battery}
+BatteryIntent {Battery} please
+BatteryIntent give me the {Battery}
+BatteryIntent give me the {Battery} please
+BatteryIntent get me the {Battery}
+BatteryIntent get me the {Battery} please
+BatteryIntent i want the {Battery}
+BatteryIntent i want the {Battery} please
+BatteryIntent give me {Battery}
+BatteryIntent give me {Battery} please
+BatteryIntent get me {Battery}
+BatteryIntent get me {Battery} please
+BatteryIntent i want {Battery}
+BatteryIntent i want {Battery} please
+
 AMAZON.RepeatIntent	read the answer back
 AMAZON.RepeatIntent	read the answer back please
 AMAZON.RepeatIntent	read the sentence back
