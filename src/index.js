@@ -63,7 +63,7 @@ SmartBic.prototype.intentHandlers = {
     },
     "AMAZON.PauseIntent": function (intent, session, callback) {
         session.attributes.PAUSED = 1;
-        respond.withPlainText(responses.Simulation.Pause, callback);
+        respond.withPlainText(responses.AnimalSounds.Pause, callback);
     },
     "AMAZON.ResumeIntent": function (intent, session, callback) {
         session.attributes.PAUSED = undefined;
