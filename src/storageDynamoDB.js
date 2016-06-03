@@ -19,7 +19,7 @@ var storageDynamoDB = (function () {
     return {
         load: function (session, brand, model, year, callback) {
             dynamodb.scan({
-                TableName: 'CarModels',
+                TableName: 'Cars',
                 ProjectionExpression:"Title, Description",
                 FilterExpression: "#brand = :brand and #model = :model and #year = :year",
                 ExpressionAttributeNames: {
@@ -36,12 +36,10 @@ var storageDynamoDB = (function () {
                 var currentDynamoDB;
                 if (err) {
                     console.log(err, err.stack);
-                    currentDynamoDB = new DynamoDB(session);
-                    callback(currentDynamoDB);
+                    callback([]);
                 } else {
                     console.log('get game from dynamodb=' + JSON.stringify(data.Items));
-                    currentDynamoDB = new DynamoDB(session, data);
-                    callback(currentDynamoDB);
+                    callback(data.Items);
                 }
             });
         },

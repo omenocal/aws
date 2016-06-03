@@ -106,6 +106,11 @@ function getWelcomeMessage(session, callback) {
  * Getting battery suggestions from DynamoDB depending on filter fields
  */
 function getBattery(intent, session, callback) {
+    session.attributes.BATTERIES = undefined;
+    session.attributes.BRAND = undefined;
+    session.attributes.MODEL = undefined;
+    session.attributes.YEAR = undefined;
+                
     if(intent.slots.Brand.value && intent.slots.Model.value && intent.slots.Year.value) {
         var brand = intent.slots.Brand.value.toLowerCase();
         var model = intent.slots.Model.value.toLowerCase();
@@ -170,7 +175,7 @@ function getBattery(intent, session, callback) {
  */
 function getBatteryDescription(intent, session, callback) {
     if(intent.slots.Battery.value) {
-        var battery = intent.slots.Brand.value.toLowerCase();
+        var battery = intent.slots.Battery.value.toLowerCase();
 
         if (isEmpty(battery)) {
             var speech = {

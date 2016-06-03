@@ -21,11 +21,11 @@ allItems.forEach(function(car) {
             TableName: "Cars",
             Item: {
                 "CarId": "" + carNumberId,
-                "Brand": car.Brand,
-                "Model": car.Model,
+                "Brand": car.Brand.toLowerCase(),
+                "Model": car.Model.toLowerCase(),
                 "Year": car.Year,
-                "Title": item.Titulo,
-                "Description": item.Description
+                "Title": item.Titulo.toLowerCase(),
+                "Description": item.Description.toLowerCase()
             }
         };
 
