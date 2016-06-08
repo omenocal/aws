@@ -30,7 +30,7 @@ var storageDynamoDB = (function () {
                 ExpressionAttributeValues: {
                      ":brand": brand,
                      ":model": model,
-                     ":year": parseInt(year)
+                     ":year": year
                 }
             }, function (err, data) {
                 var currentDynamoDB;
@@ -38,7 +38,8 @@ var storageDynamoDB = (function () {
                     console.log(err, err.stack);
                     callback([]);
                 } else {
-                    console.log('get game from dynamodb=' + JSON.stringify(data.Items));
+                    console.log('brand = ' + brand + "; model = " + model + "; year = " + year);
+                    console.log('get car from dynamodb=' + JSON.stringify(data.Items));
                     callback(data.Items);
                 }
             });

@@ -116,14 +116,14 @@ function getBattery(intent, session, callback) {
         var model = intent.slots.Model.value.toLowerCase();
         var year = intent.slots.Year.value;
 
-        if (isEmpty(brand) && isEmpty(model) && isEmpty(year)) {
+        if (isEmpty(brand) || isEmpty(model) || isEmpty(year)) {
             respond.withPlainText(responses.Car.NotUnderstood, callback);
             return;
         }
 
         storageDynamoDB.load(session, brand, model, year, function (item) {
             if(item.length === 0) {
-                respond.withPlainText(responses.Car.NotUnderstood, callback);
+                respond.withPlainText(responses.Car.NoExist, callback);
                 return;
             }
 

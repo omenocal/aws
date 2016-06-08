@@ -19,6 +19,10 @@ var responses = (function () {
 				ask : 		"Sorry, I've got nothing to repeat to you. Who do you want to know what time is coming home?"
 			},
 
+			NoExist : {
+				ask : 		"Sorry, I don't have any information for that model yet. Who do you want to know what time is coming home?"
+			},
+
 			NotUnderstood : {
 				ask : "Sorry, I didn't understand some specifications. Can you please try again?",
 				reprompt: "May you please repeat the specifications of the car? I didn't hear well."

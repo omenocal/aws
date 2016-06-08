@@ -21,6 +21,12 @@ var allItems = JSON.parse(fs.readFileSync('json_custom_export_final.json', 'utf8
 
 console.log("Importing 500 items out of " + allItems.length + " into DynamoDB. Extra info: init = " + init + " numberOfItemToExport = " + numberOfItemToExport);
 
+if (fs.existsSync('LIST_OF_BRANDS')) {
+  fs.unlinkSync('LIST_OF_BRANDS');
+  fs.unlinkSync('LIST_OF_MODELS');
+}
+
+
 if(numberOfItemToExport > allItems.length) {
   numberOfItemToExport = allItems.length;
 }
@@ -53,5 +59,8 @@ for (var i = init; i < numberOfItemToExport; i++) {
        }
     });
   }
+
+  fs.appendFile('LIST_OF_BRANDS', car.marca + "\n", function (err) {});
+  fs.appendFile('LIST_OF_MODELS', car.modelo + "\n", function (err) {});
 }
 
