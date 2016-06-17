@@ -14,8 +14,7 @@ var APP_ID = "amzn1.echo-sdk-ams.app.04c6d965-01d7-46cb-917b-060e834384ef";
 var AlexaSkill = require('./AlexaSkill'),
     storageDynamoDB = require('./storageDynamoDB'),
     responses = require('./responses'),
-    respond = require('./respond'),
-    https = require('https');
+    respond = require('./respond');
 
 /**
  * SmartBic is a child of AlexaSkill.
@@ -52,6 +51,18 @@ SmartBic.prototype.intentHandlers = {
     "WelcomeIntent": function (intent, session, callback) {
         session.attributes.PAUSED = undefined;
         getWelcomeMessage(session, callback);
+    },
+    "BrandIntent": function (intent, session, callback) {
+        session.attributes.PAUSED = undefined;
+        getBrand(intent, session, callback);
+    },
+    "ModelIntent": function (intent, session, callback) {
+        session.attributes.PAUSED = undefined;
+        getModel(intent, session, callback);
+    },
+    "YearIntent": function (intent, session, callback) {
+        session.attributes.PAUSED = undefined;
+        getYear(intent, session, callback);
     },
     "CarIntent": function (intent, session, callback) {
         session.attributes.PAUSED = undefined;
@@ -103,6 +114,97 @@ function getWelcomeMessage(session, callback) {
 
 
 /**
+ * Getting brand from users prompt
+ */
+function getBrand(intent, session, callback) {                
+    if(intent.slots.Brand.value) {
+        var brand = intent.slots.Brand.value.toLowerCase();
+
+        if (isEmpty(brand)) {
+            respond.withPlainText(responses.Car.BrandNotUnderstood, callback);
+            return;
+        }
+
+        session.attributes.BRAND = brand;
+        respond.withPlainText(responses.Car.AskModel, callback);
+
+    } else {
+        respond.withPlainText(responses.Car.NotUnderstood, callback);
+    }    
+}
+
+
+/**
+ * Getting model from users prompt
+ */
+function getModel(intent, session, callback) {
+    if(session.attributes.BRAND === undefined) {
+        //  BMW is the only one value which is not recognized by the Brand method
+        if(intent.slots.Model.value) {
+            var model = intent.slots.Model.value.toLowerCase();
+            if(model === 'bmw' || model === 'mw') {
+                session.attributes.BRAND = 'bmw';
+                respond.withPlainText(responses.Car.AskModel, callback);
+                return;
+            }
+        }
+
+        respond.withPlainText(responses.Car.BrandNotDefinedYet, callback);
+        return;
+    }
+
+    if(intent.slots.Model.value) {
+        var model = intent.slots.Model.value.toLowerCase();
+
+        if (isEmpty(model)) {
+            respond.withPlainText(responses.Car.ModelNotUnderstood, callback);
+            return;
+        }
+
+        session.attributes.MODEL = model;
+        respond.withPlainText(responses.Car.AskYear, callback);
+
+    } else {
+        respond.withPlainText(responses.Car.ModelNotUnderstood, callback);
+    }    
+}
+
+
+/**
+ * Getting year from users prompt
+ */
+function getYear(intent, session, callback) {
+    if(session.attributes.BRAND === undefined) {
+        respond.withPlainText(responses.Car.BrandNotDefinedYet, callback);
+        return;
+    }
+
+    if(session.attributes.MODEL === undefined) {
+        respond.withPlainText(responses.Car.ModelNotDefinedYet, callback);
+        return;
+    }
+
+    if(intent.slots.Year.value) {
+        var year = intent.slots.Year.value.toLowerCase();
+
+        if (isEmpty(year)) {
+            respond.withPlainText(responses.Car.YearNotUnderstood, callback);
+            return;
+        }
+
+        queryAgainstDataBase(session,
+                            session.attributes.BRAND,
+                            session.attributes.MODEL,
+                            year,
+                            callback);
+
+    } else {
+        respond.withPlainText(responses.Car.YearNotUnderstood, callback);
+    }    
+}
+
+
+/**
  * Getting battery suggestions from DynamoDB depending on filter fields
  */
 function getBattery(intent, session, callback) {
@@ -121,52 +223,67 @@ function getBattery(intent, session, callback) {
             return;
         }
 
-        storageDynamoDB.load(session, brand, model, year, function (item) {
-            if(item.length === 0) {
-                respond.withPlainText(responses.Car.NoExist, callback);
-                return;
-            }
-
-            if(item.length === 1) {
-                session.attributes.REPEAT_MESSAGE = "The " + item[0].Title + " battery for a " +
-                                                    brand + ", " + model + ", " + year + " is " +
-                                                    item[0].Description + ". What other battery would you like to look for?";
-
-                var speech = {
-                    ask:        session.attributes.REPEAT_MESSAGE,
-                    reprompt:   "What other battery would you like to look for?"
-                };
-
-                respond.withPlainText(speech, callback);
-            } else {
-                var askString = "I'm aware of " + item.length + " brands that fit your car specifications. "
-
-                for (var i = 0; i < item.length - 1; i++) {
-                    askString += item[i].Title + ", ";
-                }
-
-                askString += "and " + item[item.length - 1].Title + ". What battery brand do you prefer?";
-
-                session.attributes.REPEAT_MESSAGE = askString;
-                session.attributes.BATTERIES = item;
-                session.attributes.BRAND = brand;
-                session.attributes.MODEL = model;
-                session.attributes.YEAR = year;
-
-                var speech = {
-                    ask: askString,
-                    reprompt: "What battery brand do you prefer?"
-                };
-
-                respond.withPlainText(speech, callback);
-            }
-                
-        });
+        queryAgainstDataBase(session, brand, model, year, callback);
 
     } else {
         respond.withPlainText(responses.Car.NotUnderstood, callback);
     }
     
+}
+
+
+function queryAgainstDataBase(session, brand, model, year, callback) {
+    storageDynamoDB.load(session, brand, model, year, function (item) {
+        if(item.length === 0) {
+            session.attributes.BATTERIES = undefined;
+            session.attributes.BRAND = undefined;
+            session.attributes.MODEL = undefined;
+            session.attributes.YEAR = undefined;
+
+            respond.withPlainText(responses.Car.NoExist, callback);
+            return;
+        }
+
+        if(item.length === 1) {
+            session.attributes.REPEAT_MESSAGE = "The " + item[0].Title + " battery for a " +
+                                                brand + ", " + model + ", " + year + " is " +
+                                                item[0].Description + ". What other battery would you like to look for?";
+
+            var speech = {
+                ask:        session.attributes.REPEAT_MESSAGE,
+                reprompt:   "What other battery would you like to look for?"
+            };
+
+            session.attributes.BATTERIES = undefined;
+            session.attributes.BRAND = undefined;
+            session.attributes.MODEL = undefined;
+            session.attributes.YEAR = undefined;
+                
+            respond.withPlainText(speech, callback);
+        } else {
+            var askString = "I'm aware of " + item.length + " brands that fit your car specifications. "
+
+            for (var i = 0; i < item.length - 1; i++) {
+                askString += item[i].Title + ", ";
+            }
+
+            askString += "and " + item[item.length - 1].Title + ". What battery brand do you prefer?";
+
+            session.attributes.REPEAT_MESSAGE = askString;
+            session.attributes.BATTERIES = item;
+            session.attributes.BRAND = brand;
+            session.attributes.MODEL = model;
+            session.attributes.YEAR = year;
+
+            var speech = {
+                ask: askString,
+                reprompt: "What battery brand do you prefer?"
+            };
+
+            respond.withPlainText(speech, callback);
+        }
+            
+    });
 }
 
 
@@ -253,6 +370,7 @@ function manageYesNoAnswer(session, callback, answerOption) {
         getWelcomeMessage(session, callback);
     }
 }
+
 
 function isEmpty(value) {
     return (typeof value === 'undefined') || value === null || (typeof value === 'string' && value.trim().length === 0) || (typeof value === 'object' && Object.keys(value).length === 0);

@@ -16,11 +16,46 @@ var responses = (function () {
 			},
 
 			NoRepeatMessage : {
-				ask : 		"Sorry, I've got nothing to repeat to you. Who do you want to know what time is coming home?"
+				ask : 	"Sorry, I've got nothing to repeat to you. Tell me other specifications for another car."
 			},
 
 			NoExist : {
-				ask : 		"Sorry, I don't have any information for that model yet. Who do you want to know what time is coming home?"
+				ask : 	"Sorry, I don't have any information for that model yet. Tell me other specifications for another car."
+			},
+
+			BrandNotDefinedYet : {
+				ask : "There are some parameters missing. Tell me, what is the car's brand?",
+				reprompt: "What is the car's brand?"
+			},
+
+			ModelNotDefinedYet : {
+				ask : "There are some parameters missing. Tell me, what is the car's model?",
+				reprompt: "What is the car's model?"
+			},
+
+			AskModel : {
+				ask : "Ok. Now tell me the car's model",
+				reprompt: "What is the car's model?"
+			},
+
+			AskYear : {
+				ask : "Ok. Now tell me the car's year",
+				reprompt: "What is the car's year?"
+			},
+
+			BrandNotUnderstood : {
+				ask : "Sorry, I didn't understand the brand you said. Can you please try again?",
+				reprompt: "May you please repeat the car's brand? I didn't hear well."
+			},
+
+			ModelNotUnderstood : {
+				ask : "Sorry, I didn't understand the model you said. Can you please try again?",
+				reprompt: "May you please repeat the model of the car? I didn't hear well."
+			},
+
+			YearNotUnderstood : {
+				ask : "Sorry, I didn't understand the year you said. Can you please try again?",
+				reprompt: "May you please repeat the year of the car? I didn't hear well."
 			},
 
 			NotUnderstood : {
@@ -65,7 +100,7 @@ var responses = (function () {
 		Help : {
 
 			MainMenu : {
-				ask : 	"I can tell you the most appropiate battery for your car. Just tell me the model, the brand and the year, " +
+				ask : 	"I can tell you the most appropiate battery for your car. Just tell me the brand, the model and the year, " +
 						"so I can look for the suggestions I've got in my knowledge. Tell me, what kind of car do you have?"
 			}
 

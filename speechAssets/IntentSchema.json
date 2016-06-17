@@ -4,6 +4,33 @@
       "intent": "WelcomeIntent"
     },
     {
+      "intent": "BrandIntent",
+      "slots": [
+        {
+          "name": "Brand",
+          "type": "LIST_OF_BRANDS"
+        }
+      ]
+    },
+    {
+      "intent": "ModelIntent",
+      "slots": [
+        {
+          "name": "Model",
+          "type": "LIST_OF_MODELS"
+        }
+      ]
+    },
+    {
+      "intent": "YearIntent",
+      "slots": [
+        {
+          "name": "Year",
+          "type": "AMAZON.FOUR_DIGIT_NUMBER"
+        }
+      ]
+    },
+    {
       "intent": "CarIntent",
       "slots": [
         {
@@ -16,7 +43,7 @@
         },
         {
           "name": "Year",
-          "type": "AMAZON.NUMBER"
+          "type": "AMAZON.FOUR_DIGIT_NUMBER"
         }
       ]
     },

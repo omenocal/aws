@@ -18,6 +18,54 @@ WelcomeIntent tell me batteries
 WelcomeIntent speak about a battery
 WelcomeIntent speak about batteries
 
+BrandIntent {Brand}
+BrandIntent {Brand}
+BrandIntent {Brand} please
+BrandIntent give me the {Brand}
+BrandIntent give me the {Brand} please
+BrandIntent get me the {Brand}
+BrandIntent get me the {Brand} please
+BrandIntent i want the {Brand}
+BrandIntent i want the {Brand} please
+BrandIntent give me {Brand}
+BrandIntent give me {Brand} please
+BrandIntent get me {Brand}
+BrandIntent get me {Brand} please
+BrandIntent i want {Brand}
+BrandIntent i want {Brand} please
+
+ModelIntent {Model}
+ModelIntent {Model}
+ModelIntent {Model} please
+ModelIntent give me the {Model}
+ModelIntent give me the {Model} please
+ModelIntent get me the {Model}
+ModelIntent get me the {Model} please
+ModelIntent i want the {Model}
+ModelIntent i want the {Model} please
+ModelIntent give me {Model}
+ModelIntent give me {Model} please
+ModelIntent get me {Model}
+ModelIntent get me {Model} please
+ModelIntent i want {Model}
+ModelIntent i want {Model} please
+
+YearIntent {Year}
+YearIntent {Year}
+YearIntent {Year} please
+YearIntent give me the {Year}
+YearIntent give me the {Year} please
+YearIntent get me the {Year}
+YearIntent get me the {Year} please
+YearIntent i want the {Year}
+YearIntent i want the {Year} please
+YearIntent give me {Year}
+YearIntent give me {Year} please
+YearIntent get me {Year}
+YearIntent get me {Year} please
+YearIntent i want {Year}
+YearIntent i want {Year} please
+
 CarIntent {Brand} {Model} {Year}
 CarIntent {Brand} {Year} {Model}
 CarIntent {Model} {Brand} {Year}
