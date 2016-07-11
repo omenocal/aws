@@ -11,7 +11,7 @@ var responses = (function () {
 		Car : {
 
 			Welcome : {
-				ask : "What kind of specifications does your car have?",
+				ask : "In order to suggest you the wright battery for your car, I need the maker, model and year of you automobile.",
 				reprompt: "Don't be shy. Tell me. What kind of specifications does your car have?"
 			},
 

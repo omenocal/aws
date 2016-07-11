@@ -74,11 +74,11 @@ SmartBic.prototype.intentHandlers = {
     },
     "AMAZON.PauseIntent": function (intent, session, callback) {
         session.attributes.PAUSED = 1;
-        respond.withPlainText(responses.AnimalSounds.Pause, callback);
+        respond.withPlainText(responses.Car.Pause, callback);
     },
     "AMAZON.ResumeIntent": function (intent, session, callback) {
         session.attributes.PAUSED = undefined;
-        getWelcomeMessage(session, callback);
+        getRepeatMessage(session, callback);
     },
     "AMAZON.RepeatIntent": function (intent, session, callback) {
         session.attributes.PAUSED = undefined;
@@ -109,6 +109,7 @@ SmartBic.prototype.intentHandlers = {
  * Getting welcome message
  */
 function getWelcomeMessage(session, callback) {
+    session.attributes.REPEAT_MESSAGE = responses.Car.Welcome.ask;
     respond.withPlainText(responses.Car.Welcome, callback);
 }
 
@@ -121,14 +122,17 @@ function getBrand(intent, session, callback) {
         var brand = intent.slots.Brand.value.toLowerCase();
 
         if (isEmpty(brand)) {
+            session.attributes.REPEAT_MESSAGE = responses.Car.BrandNotUnderstood.ask;
             respond.withPlainText(responses.Car.BrandNotUnderstood, callback);
             return;
         }
 
         session.attributes.BRAND = brand;
+        session.attributes.REPEAT_MESSAGE = responses.Car.AskModel.ask;
         respond.withPlainText(responses.Car.AskModel, callback);
 
     } else {
+        session.attributes.REPEAT_MESSAGE = responses.Car.NotUnderstood.ask;
         respond.withPlainText(responses.Car.NotUnderstood, callback);
     }    
 }
@@ -144,11 +148,13 @@ function getModel(intent, session, callback) {
             var model = intent.slots.Model.value.toLowerCase();
             if(model === 'bmw' || model === 'mw') {
                 session.attributes.BRAND = 'bmw';
+                session.attributes.REPEAT_MESSAGE = responses.Car.AskModel.ask;
                 respond.withPlainText(responses.Car.AskModel, callback);
                 return;
             }
         }
 
+        session.attributes.REPEAT_MESSAGE = responses.Car.BrandNotDefinedYet.ask;
         respond.withPlainText(responses.Car.BrandNotDefinedYet, callback);
         return;
     }
@@ -157,14 +163,17 @@ function getModel(intent, session, callback) {
         var model = intent.slots.Model.value.toLowerCase();
 
         if (isEmpty(model)) {
+            session.attributes.REPEAT_MESSAGE = responses.Car.ModelNotUnderstood.ask;
             respond.withPlainText(responses.Car.ModelNotUnderstood, callback);
             return;
         }
 
         session.attributes.MODEL = model;
+        session.attributes.REPEAT_MESSAGE = responses.Car.AskYear.ask;
         respond.withPlainText(responses.Car.AskYear, callback);
 
     } else {
+        session.attributes.REPEAT_MESSAGE = responses.Car.ModelNotUnderstood.ask;
         respond.withPlainText(responses.Car.ModelNotUnderstood, callback);
     }    
 }
@@ -175,11 +184,24 @@ function getModel(intent, session, callback) {
  */
 function getYear(intent, session, callback) {
     if(session.attributes.BRAND === undefined) {
+        session.attributes.REPEAT_MESSAGE = responses.Car.BrandNotDefinedYet.ask;
         respond.withPlainText(responses.Car.BrandNotDefinedYet, callback);
         return;
     }
 
     if(session.attributes.MODEL === undefined) {
+        //  Models 528 and 535 are not added the i in Brand BMW
+        if(intent.slots.Year.value) {
+            var model = intent.slots.Year.value.toLowerCase();
+            if(model === '528' || model === '535') {
+                session.attributes.MODEL = model + 'i';
+                session.attributes.REPEAT_MESSAGE = responses.Car.AskYear.ask;
+                respond.withPlainText(responses.Car.AskYear, callback);
+                return;
+            }
+        }
+
+        session.attributes.REPEAT_MESSAGE = responses.Car.ModelNotDefinedYet.ask;
         respond.withPlainText(responses.Car.ModelNotDefinedYet, callback);
         return;
     }
@@ -188,6 +210,7 @@ function getYear(intent, session, callback) {
         var year = intent.slots.Year.value.toLowerCase();
 
         if (isEmpty(year)) {
+            session.attributes.REPEAT_MESSAGE = responses.Car.YearNotUnderstood.ask;
             respond.withPlainText(responses.Car.YearNotUnderstood, callback);
             return;
         }
@@ -199,6 +222,7 @@ function getYear(intent, session, callback) {
                             callback);
 
     } else {
+        session.attributes.REPEAT_MESSAGE = responses.Car.YearNotUnderstood.ask;
         respond.withPlainText(responses.Car.YearNotUnderstood, callback);
     }    
 }
@@ -219,6 +243,7 @@ function getBattery(intent, session, callback) {
         var year = intent.slots.Year.value;
 
         if (isEmpty(brand) || isEmpty(model) || isEmpty(year)) {
+            session.attributes.REPEAT_MESSAGE = responses.Car.NotUnderstood.ask;
             respond.withPlainText(responses.Car.NotUnderstood, callback);
             return;
         }
@@ -226,6 +251,7 @@ function getBattery(intent, session, callback) {
         queryAgainstDataBase(session, brand, model, year, callback);
 
     } else {
+        session.attributes.REPEAT_MESSAGE = responses.Car.NotUnderstood.ask;
         respond.withPlainText(responses.Car.NotUnderstood, callback);
     }
     
@@ -240,6 +266,7 @@ function queryAgainstDataBase(session, brand, model, year, callback) {
             session.attributes.MODEL = undefined;
             session.attributes.YEAR = undefined;
 
+            session.attributes.REPEAT_MESSAGE = responses.Car.NoExist.ask;
             respond.withPlainText(responses.Car.NoExist, callback);
             return;
         }
@@ -258,7 +285,7 @@ function queryAgainstDataBase(session, brand, model, year, callback) {
             session.attributes.BRAND = undefined;
             session.attributes.MODEL = undefined;
             session.attributes.YEAR = undefined;
-                
+            
             respond.withPlainText(speech, callback);
         } else {
             var askString = "I'm aware of " + item.length + " brands that fit your car specifications. "
@@ -362,12 +389,13 @@ function manageYesNoAnswer(session, callback, answerOption) {
     if(session.attributes.PAUSED) {
         if(answerOption === 'yes') {
             session.attributes.PAUSED = undefined;
-            getWelcomeMessage(session, callback);
+            getRepeatMessage(session, callback);
         } else {
+            session.attributes.REPEAT_MESSAGE = responses.Car.Pause.ask;
             respond.withPlainText(responses.Car.Pause, callback);
         }
     } else {
-        getWelcomeMessage(session, callback);
+        getRepeatMessage(session, callback);
     }
 }
 
