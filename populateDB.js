@@ -10,16 +10,16 @@ var carNumberId = 0;
 var numberOfItemToExport = process.argv[2];
 
 if(numberOfItemToExport !== undefined) {
-  numberOfItemToExport = numberOfItemToExport * 500;
+  numberOfItemToExport = numberOfItemToExport * 1000;
 } else {
-  numberOfItemToExport = 500;
+  numberOfItemToExport = 1000;
 }
 
-var init = numberOfItemToExport - 500;
+var init = numberOfItemToExport - 1000;
 
 var allItems = JSON.parse(fs.readFileSync('json_custom_export_final.json', 'utf8'));
 
-console.log("Importing 500 items out of " + allItems.length + " into DynamoDB. Extra info: init = " + init + " numberOfItemToExport = " + numberOfItemToExport);
+console.log("Importing 1000 items out of " + allItems.length + " into DynamoDB. Extra info: init = " + init + " numberOfItemToExport = " + numberOfItemToExport);
 
 if (fs.existsSync('LIST_OF_BRANDS')) {
   fs.unlinkSync('LIST_OF_BRANDS');
@@ -53,6 +53,9 @@ function insertItems(i, numberOfItemToExport, allItems) {
             ":brand": car.marca.toLowerCase(),
             ":model": car.modelo.toLowerCase(),
             ":year": "" + car.anio
+        },
+        ExclusiveStartKey: {
+            CarId: "2000"
         }
     };
 

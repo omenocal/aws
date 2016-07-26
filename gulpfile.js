@@ -26,7 +26,7 @@ gulp.task('test', function () {
   
 });
 
-gulp.task('upload-function', function () {
+gulp.task('upload-function', ['zip'], function () {
   run('aws lambda update-function-code --profile smarttek --function-name getSmartBic --zip-file fileb://archives/archive.zip').exec()
     .on('error', gutil.log)
     .pipe(gulp.dest('output'));
