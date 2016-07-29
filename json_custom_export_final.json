@@ -335,7 +335,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "FIVE HUNDRED",
+    "modelo": "500",
     "marca": "FORD",
     "id": "0E21E8E6-5E5D-4418-948C-24E78BB28585",
     "items": [
@@ -1151,7 +1151,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "39C8FCDC-AC9B-4A8E-8BFD-61EEE03346BC",
     "items": [
@@ -2214,7 +2214,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "6AB8C16F-A36C-4807-8DD7-ADE598C503F9",
     "items": [
@@ -2684,7 +2684,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "84B1BFAD-D34E-4B38-B57F-923B26E62A29",
     "items": [
@@ -2994,7 +2994,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "90E76BBB-A332-4277-9083-2C2BF5611F7D",
     "items": [
@@ -3511,7 +3511,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "B4E1DD91-DF9B-4457-9961-082EE8965F0E",
     "items": [
@@ -4440,7 +4440,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "E5CC7EAD-6EFA-4D6B-99D7-208486E29738",
     "items": [
@@ -4608,7 +4608,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "EC7DE4CC-2689-458A-BF66-513049639A51",
     "items": [
@@ -4870,7 +4870,7 @@
   {
     "motor": "",
     "anio": "2004",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "F8232AE3-068B-4869-A23B-212046C0EF32",
     "items": [
@@ -5067,7 +5067,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "02DB44AE-F23C-4242-BB27-A3396ADBE471",
     "items": [
@@ -5352,7 +5352,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "FIAT BRAVO",
+    "modelo": "BRAVO",
     "marca": "FIAT",
     "id": "167CD88C-E512-434A-B357-F34AFE3BE6FC",
     "items": [
@@ -5474,7 +5474,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "1DC367E5-52EA-4403-9DF6-2E50DE7C84AE",
     "items": [
@@ -5981,7 +5981,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "3E625778-4E7F-46FB-9954-D974B3FED400",
     "items": [
@@ -6040,7 +6040,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "411AE9BB-6A5A-4BCE-A421-8049D80BAE98",
     "items": [
@@ -6671,7 +6671,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "52E7C6E6-928F-4CD4-A9A8-D0373A9315B3",
     "items": [
@@ -7231,7 +7231,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "7B5116EB-5CB9-44B8-9E37-3F04B43FCD25",
     "items": [
@@ -7684,7 +7684,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "9134A624-51BE-4EFD-A9A5-AA4C283D9970",
     "items": [
@@ -8138,7 +8138,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "A5D45BB4-9BCB-4E67-BED0-F32FBD5FE1E1",
     "items": [
@@ -8596,7 +8596,7 @@
   {
     "motor": "",
     "anio": "2005",
-    "modelo": "FIVE HUNDRED",
+    "modelo": "500",
     "marca": "FORD",
     "id": "B55FF217-AF49-40F6-856B-1D7D43FED1C3",
     "items": [
@@ -9985,7 +9985,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "FIVE HUNDRED",
+    "modelo": "500",
     "marca": "FORD",
     "id": "02EBBE6D-BF87-4C4D-BEA6-A1131A3CE6B1",
     "items": [
@@ -10209,7 +10209,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "FIAT BRAVO",
+    "modelo": "BRAVO",
     "marca": "FIAT",
     "id": "0ADF6EAA-DB7B-432E-843D-6CDB6859C83D",
     "items": [
@@ -11121,7 +11121,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "3C37BED4-9768-4CCA-969D-EC673D3C05BC",
     "items": [
@@ -12146,7 +12146,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "77FE5CA1-22E6-4D13-9E58-1992E2889CFE",
     "items": [
@@ -12308,7 +12308,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "7EDB3370-72FB-44B8-9395-93DAABBDC075",
     "items": [
@@ -13208,7 +13208,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "A9B6120B-79ED-471C-95DA-34DB1614CE7F",
     "items": [
@@ -13514,7 +13514,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "B6F0E404-9807-4B0B-8872-5921FE9A6AE9",
     "items": [
@@ -13608,7 +13608,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "BA5B822E-FA51-4D0D-8C4D-B1677BD12BC1",
     "items": [
@@ -14444,7 +14444,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "E3300698-14CD-442F-ADCD-D4AC28E715DC",
     "items": [
@@ -14793,7 +14793,7 @@
   {
     "motor": "",
     "anio": "2006",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "EEBDF18D-ACAE-4140-850F-69AB521C13EA",
     "items": [
@@ -15175,7 +15175,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "05F1FD4C-B798-4121-83BC-FC0CA49EEDDE",
     "items": [
@@ -15783,7 +15783,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "2229D33A-AEC8-40A4-A731-16BC2BD2B658",
     "items": [
@@ -15964,7 +15964,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "FIAT 500 SPORT",
+    "modelo": "500 SPORT",
     "marca": "FIAT",
     "id": "270005F6-D7CE-4F11-B6B3-8B5888A4065E",
     "items": [
@@ -16032,7 +16032,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "2B416EC8-C1D3-41A6-A6BC-3E12139FF4BC",
     "items": [
@@ -16222,7 +16222,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "FIAT 500 LOUNGE",
+    "modelo": "500 LOUNGE",
     "marca": "FIAT",
     "id": "32A4382B-F967-48C3-956A-11C4CF22A386",
     "items": [
@@ -16899,7 +16899,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "4B36CF38-E5BE-498E-88A2-C0B27A7364B8",
     "items": [
@@ -16945,7 +16945,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "4E3E6D0F-00D2-4E22-A162-9D0F77A19EBE",
     "items": [
@@ -17658,7 +17658,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "7177F1AF-D663-408E-9A74-C7CDF5FC3673",
     "items": [
@@ -17696,7 +17696,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "FIAT 500 VINTAGE",
+    "modelo": "500 VINTAGE",
     "marca": "FIAT",
     "id": "746BCE86-9CE9-42F2-BA0B-655406683F8D",
     "items": [
@@ -18420,7 +18420,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "FIVE HUNDRED",
+    "modelo": "500",
     "marca": "FORD",
     "id": "9A703168-6981-4DAB-A70E-22B362B0CD93",
     "items": [
@@ -18467,7 +18467,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "FIAT BRAVO",
+    "modelo": "BRAVO",
     "marca": "FIAT",
     "id": "9EFF3620-029D-4B1F-84CF-6008B2D369F1",
     "items": [
@@ -20022,7 +20022,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "EEA53C4B-7C21-43E0-A473-9D42239018F1",
     "items": [
@@ -20119,7 +20119,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "FIAT 500 CLASSIC",
+    "modelo": "500 CLASSIC",
     "marca": "FIAT",
     "id": "F8422608-9D7C-4DA9-A05B-4690779CACAF",
     "items": [
@@ -20208,7 +20208,7 @@
   {
     "motor": "",
     "anio": "2007",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "FC21CF52-ECCE-497B-867C-C43402BF8B3D",
     "items": [
@@ -20640,7 +20640,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "FIAT 500 SPORT",
+    "modelo": "500 SPORT",
     "marca": "FIAT",
     "id": "0A14A804-1D04-45B2-88C6-41E9B630985C",
     "items": [
@@ -20691,7 +20691,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "INFINITI G37 COUPE",
+    "modelo": "G37 COUPE",
     "marca": "NISSAN",
     "id": "0CC30A32-CA48-4951-9B15-0CC07C1F5F6F",
     "items": [
@@ -20826,7 +20826,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "INFINITI G37 SEDAN",
+    "modelo": "G37 SEDAN",
     "marca": "NISSAN",
     "id": "12793448-B94B-449A-85F5-C5BAFA3C559B",
     "items": [
@@ -21123,7 +21123,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "267654A6-BC5F-47B0-A73B-4A0C66B9EAA0",
     "items": [
@@ -21686,7 +21686,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "FIAT 500 LOUNGE",
+    "modelo": "500 LOUNGE",
     "marca": "FIAT",
     "id": "3FF92B3A-8C4C-4D9C-BB72-DEF5ADA81E4D",
     "items": [
@@ -21767,7 +21767,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "4273A45A-9C4D-4A34-A20C-D9A90B24BF4C",
     "items": [
@@ -22631,7 +22631,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "6BF2317C-98F2-4DAC-9124-021C21F0C1A0",
     "items": [
@@ -22762,7 +22762,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "71290867-624D-4C08-8B91-F4125E845DFE",
     "items": [
@@ -23754,7 +23754,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "FIAT 500 CLASSIC",
+    "modelo": "500 CLASSIC",
     "marca": "FIAT",
     "id": "A2D61832-CE6A-4CFE-9411-4809FA8AAC6C",
     "items": [
@@ -24154,7 +24154,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "B4FA0721-EBFA-49B6-BF68-3276B7FDE7CA",
     "items": [
@@ -24213,7 +24213,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "B51916F6-634D-42EE-9EB7-7DD8385D540D",
     "items": [
@@ -24601,7 +24601,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "C0801995-80EF-4D96-8289-80D6E35C9FB1",
     "items": [
@@ -24810,7 +24810,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "FIAT BRAVO",
+    "modelo": "BRAVO",
     "marca": "FIAT",
     "id": "C8564B6F-A6B4-4CFA-BF29-086644EC4CB7",
     "items": [
@@ -25001,7 +25001,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "FIAT 500 VINTAGE",
+    "modelo": "500 VINTAGE",
     "marca": "FIAT",
     "id": "D1CF7138-6E5A-4484-B40B-76D87B88B065",
     "items": [
@@ -25235,7 +25235,7 @@
   {
     "motor": "",
     "anio": "2008",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "E3453737-92F8-44CD-9F91-C3488EF3456E",
     "items": [
@@ -25991,7 +25991,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "0AB72D7F-E4EE-45A2-8B77-EF65B55C4708",
     "items": [
@@ -26590,7 +26590,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "27459605-5117-4CAD-8851-AC490AB93E0E",
     "items": [
@@ -26720,7 +26720,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "FIAT BRAVO",
+    "modelo": "BRAVO",
     "marca": "FIAT",
     "id": "304D197E-4F1A-4C65-B4BF-5CCA90E8855F",
     "items": [
@@ -27755,7 +27755,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "INFINITI G37 SEDAN",
+    "modelo": "G37 SEDAN",
     "marca": "NISSAN",
     "id": "5E30B43F-9D43-4C08-B1B9-9C183D83C3CD",
     "items": [
@@ -27806,7 +27806,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "FIAT 500 LOUNGE",
+    "modelo": "500 LOUNGE",
     "marca": "FIAT",
     "id": "5FEA5897-7881-412C-8F51-7302567D47A0",
     "items": [
@@ -28455,7 +28455,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "INFINITI G37 COUPE",
+    "modelo": "G37 COUPE",
     "marca": "NISSAN",
     "id": "78A384E8-E5A7-4EAE-8E3C-0938DA64349F",
     "items": [
@@ -28729,7 +28729,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "FIAT 500 SPORT",
+    "modelo": "500 SPORT",
     "marca": "FIAT",
     "id": "85C05123-8777-485E-A1A6-58C8C13F1E52",
     "items": [
@@ -28789,7 +28789,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "MINI CLUBMAN",
+    "modelo": "CLUBMAN",
     "marca": "MINI",
     "id": "89CAF529-634F-403D-AA52-ECB01A7B9AB2",
     "items": [
@@ -28905,7 +28905,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "8DFEFBE9-5983-4A36-9952-3343FB8DF868",
     "items": [
@@ -29197,7 +29197,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "97DC23F1-3DAC-48B3-A541-A1BC64E41248",
     "items": [
@@ -29436,7 +29436,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "A23768D2-02D4-4F7E-97D7-20C6F6E12702",
     "items": [
@@ -29721,7 +29721,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "B0033B07-6B0A-4341-B0E8-EE51724B04A0",
     "items": [
@@ -30268,7 +30268,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "MINI CONVERTIBLE",
+    "modelo": "CONVERTIBLE",
     "marca": "MINI",
     "id": "D15AB76F-51F9-44A0-AFB5-A0523B39C654",
     "items": [
@@ -30344,7 +30344,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "FIAT 500 VINTAGE",
+    "modelo": "500 VINTAGE",
     "marca": "FIAT",
     "id": "D4D3812F-66E4-4C55-BC9B-6DA19A7C25EF",
     "items": [
@@ -30446,7 +30446,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "D8EF2BC2-142C-4921-AA4B-7EEDC5F9950D",
     "items": [
@@ -30488,7 +30488,7 @@
   {
     "motor": "",
     "anio": "2009",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "D907A81E-9843-46DF-AEB4-5CDC94D4A017",
     "items": [
@@ -32063,7 +32063,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "MINI CONVERTIBLE",
+    "modelo": "CONVERTIBLE",
     "marca": "MINI",
     "id": "13804857-DDF8-49D5-978D-FE62986F6541",
     "items": [
@@ -32148,7 +32148,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "1866058A-1FE6-4B03-9547-F69BBF0CEB6B",
     "items": [
@@ -32352,7 +32352,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "FIAT 500 SPORT",
+    "modelo": "500 SPORT",
     "marca": "FIAT",
     "id": "202718B5-CFD4-4EFF-8848-B0C975249152",
     "items": [
@@ -32416,7 +32416,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "217FCF61-3A88-4EA1-B872-05E0EDB78E55",
     "items": [
@@ -32571,7 +32571,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "2773678B-A96D-4CD3-B136-CF79908AF63C",
     "items": [
@@ -32647,7 +32647,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "29F887ED-51CD-4AA7-B183-90A6F2FCD515",
     "items": [
@@ -33033,7 +33033,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "FIAT BRAVO",
+    "modelo": "BRAVO",
     "marca": "FIAT",
     "id": "347D7EF1-C37B-4C80-84B8-EE384C2F266C",
     "items": [
@@ -33084,7 +33084,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "FIAT 500 VINTAGE",
+    "modelo": "500 VINTAGE",
     "marca": "FIAT",
     "id": "3646FCD6-44BD-4ACB-974E-C73A5CB6A405",
     "items": [
@@ -33714,7 +33714,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "INFINITI G37 SEDAN",
+    "modelo": "G37 SEDAN",
     "marca": "NISSAN",
     "id": "5291D4B7-4DCB-4DD5-8500-2E3B0EA9438B",
     "items": [
@@ -34062,7 +34062,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "5EB00C68-3358-46C1-A24D-FF6422390E83",
     "items": [
@@ -34812,7 +34812,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "INFINITI G37 COUPE",
+    "modelo": "G37 COUPE",
     "marca": "NISSAN",
     "id": "889C9CAD-5E39-4BA6-9055-B5C0B32150BF",
     "items": [
@@ -35044,7 +35044,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "94C1E436-2647-4692-AB6C-DB5CBD76AAEB",
     "items": [
@@ -35575,7 +35575,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "A7049C33-6F2F-4302-AEB8-84B6387FD0E6",
     "items": [
@@ -35751,7 +35751,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "MINI CLUBMAN",
+    "modelo": "CLUBMAN",
     "marca": "MINI",
     "id": "AC21D812-5587-4B36-865B-AB82691419E0",
     "items": [
@@ -36096,7 +36096,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "FIAT 500 LOUNGE",
+    "modelo": "500 LOUNGE",
     "marca": "FIAT",
     "id": "BF315FC0-0827-483E-8770-3D58606A84E5",
     "items": [
@@ -36825,7 +36825,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "E2AB818E-5065-47DB-BD80-E2C83F067FDC",
     "items": [
@@ -36973,7 +36973,7 @@
   {
     "motor": "",
     "anio": "2010",
-    "modelo": "FIAT 500 CLASSIC",
+    "modelo": "500 CLASSIC",
     "marca": "FIAT",
     "id": "E979118D-2ACA-4B9F-A6E6-3C54DB4FB10D",
     "items": [
@@ -37462,7 +37462,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "040FDFFA-0AB1-41F8-8B9F-F68A1AD2D9EB",
     "items": [
@@ -37958,7 +37958,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "1A46DD35-CD1F-4A25-8477-60C8B668726C",
     "items": [
@@ -38301,7 +38301,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "INFINITI G37 COUPE",
+    "modelo": "G37 COUPE",
     "marca": "NISSAN",
     "id": "2A341852-11AF-4A70-BB42-40D10E753E35",
     "items": [
@@ -38733,7 +38733,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "3CD6C6D5-6316-49A2-AB64-771D8C71B67B",
     "items": [
@@ -38844,7 +38844,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "INFINITI G37 SEDAN",
+    "modelo": "G37 SEDAN",
     "marca": "NISSAN",
     "id": "4409CB20-AB72-4DC8-96C8-0FB6EF2E824E",
     "items": [
@@ -39026,7 +39026,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "FIAT 500 VINTAGE",
+    "modelo": "500 VINTAGE",
     "marca": "FIAT",
     "id": "506D59FB-A791-41EA-813A-13E9229225B4",
     "items": [
@@ -39166,7 +39166,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "INFINITI M37",
+    "modelo": "M37",
     "marca": "NISSAN",
     "id": "590B8804-089C-4E74-A09D-B2D0FF821672",
     "items": [
@@ -39677,7 +39677,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "MINI COUNTRYMAN",
+    "modelo": "COUNTRYMAN",
     "marca": "MINI",
     "id": "6CDC5E26-D78C-4795-B9F6-A26C64BBB23C",
     "items": [
@@ -39881,7 +39881,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "7436E4AC-048E-42D6-B09B-DD4A109386D5",
     "items": [
@@ -40310,7 +40310,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "MINI CONVERTIBLE",
+    "modelo": "CONVERTIBLE",
     "marca": "MINI",
     "id": "836A4731-D646-42D5-9BE4-9A3342D896A2",
     "items": [
@@ -40850,7 +40850,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "FIAT 500 LOUNGE",
+    "modelo": "500 LOUNGE",
     "marca": "FIAT",
     "id": "A269C05F-8C17-432C-8D39-93CF4F3B5CEC",
     "items": [
@@ -41050,7 +41050,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "FIAT 500 SPORT",
+    "modelo": "500 SPORT",
     "marca": "FIAT",
     "id": "AA699B5E-70A8-4864-B577-120EDF0644A2",
     "items": [
@@ -41173,7 +41173,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "MINI CLUBMAN",
+    "modelo": "CLUBMAN",
     "marca": "MINI",
     "id": "B122BA1E-B26B-4F5A-9956-53CC225250AA",
     "items": [
@@ -41393,7 +41393,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "B9ECBE59-03ED-4750-84B4-F0F571103C75",
     "items": [
@@ -41875,7 +41875,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "D1BE4CE1-034F-4A73-BBEB-F26700BB4510",
     "items": [
@@ -42202,7 +42202,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "DA202872-9143-4480-B3F6-B0A8C7A5FED7",
     "items": [
@@ -42304,7 +42304,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "FIAT BRAVO",
+    "modelo": "BRAVO",
     "marca": "FIAT",
     "id": "DBF316B5-F23F-4361-A618-F80C3BBE2522",
     "items": [
@@ -42566,7 +42566,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "E62F7C45-B806-4C97-ADD0-ED4D152457D9",
     "items": [
@@ -43006,7 +43006,7 @@
   {
     "motor": "",
     "anio": "2011",
-    "modelo": "FIAT 500 CLASSIC",
+    "modelo": "500 CLASSIC",
     "marca": "FIAT",
     "id": "F43C7669-5439-4753-87B1-A39C4058C63C",
     "items": [
@@ -43375,7 +43375,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "CITY FORFOUR",
+    "modelo": "CITY FOR 4",
     "marca": "SMART",
     "id": "0A6A2FA3-02AF-4708-B528-E77912C55E8E",
     "items": [
@@ -43974,7 +43974,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "FIAT 500 CLASSIC",
+    "modelo": "500 CLASSIC",
     "marca": "FIAT",
     "id": "284DF932-C2DD-4F1E-B980-213D3D5BB42D",
     "items": [
@@ -44089,7 +44089,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "2AD5F5D0-A38B-4C38-B066-7609CC66B69D",
     "items": [
@@ -44571,7 +44571,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "3EAC7008-4A44-417D-BA33-51EEE3635D23",
     "items": [
@@ -45199,7 +45199,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "FIAT 500 LOUNGE",
+    "modelo": "500 LOUNGE",
     "marca": "FIAT",
     "id": "5A306F2A-8631-441C-B693-B93EB8ABF4C5",
     "items": [
@@ -45322,7 +45322,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "5EE661AE-B9D1-48CB-94E6-EA3F7585729C",
     "items": [
@@ -45525,7 +45525,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "6614663F-324C-44DA-B90A-A66EEE3E580E",
     "items": [
@@ -45803,7 +45803,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "INFINITI M37",
+    "modelo": "M37",
     "marca": "NISSAN",
     "id": "740EC5E9-4235-4316-8ADF-01F48AF8544A",
     "items": [
@@ -45951,7 +45951,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "7815DEFB-E915-4CBB-9CF3-7D539CD8C866",
     "items": [
@@ -46541,7 +46541,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "FIAT BRAVO",
+    "modelo": "BRAVO",
     "marca": "FIAT",
     "id": "9A8407FF-174D-4C36-8EF7-DA1D53768C4A",
     "items": [
@@ -46665,7 +46665,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "FIAT 500 SPORT",
+    "modelo": "500 SPORT",
     "marca": "FIAT",
     "id": "9FBD76F7-A6DB-4EF6-9763-3EB33C53F27F",
     "items": [
@@ -47029,7 +47029,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "A9B35F2C-2A6B-4DA2-9B59-4C998486A1F1",
     "items": [
@@ -47071,7 +47071,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "MINI JCW",
+    "modelo": "JCW",
     "marca": "MINI",
     "id": "AC0B2B81-4EB1-484A-AA77-76BD4541B955",
     "items": [
@@ -47968,7 +47968,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "MINI CONVERTIBLE",
+    "modelo": "CONVERTIBLE",
     "marca": "MINI",
     "id": "D7EC5513-8638-44C3-A16D-B83E25B053EF",
     "items": [
@@ -48116,7 +48116,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "INFINITI G37 SEDAN",
+    "modelo": "G37 SEDAN",
     "marca": "NISSAN",
     "id": "DBDE80C0-3A7B-4759-B838-BB1FC036995A",
     "items": [
@@ -48389,7 +48389,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "MINI COUNTRYMAN",
+    "modelo": "COUNTRYMAN",
     "marca": "MINI",
     "id": "E321021C-BF2E-4B22-99C3-186EE0139C5B",
     "items": [
@@ -48559,7 +48559,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "MINI CLUBMAN",
+    "modelo": "CLUBMAN",
     "marca": "MINI",
     "id": "EB539820-934C-40D0-B433-4EE105F97BCB",
     "items": [
@@ -48572,7 +48572,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "FIAT 500 VINTAGE",
+    "modelo": "500 VINTAGE",
     "marca": "FIAT",
     "id": "EE302565-5096-4526-9056-85819C1C62D1",
     "items": [
@@ -48729,7 +48729,7 @@
   {
     "motor": "",
     "anio": "2012",
-    "modelo": "INFINITI G37 COUPE",
+    "modelo": "G37 COUPE",
     "marca": "NISSAN",
     "id": "F36B4859-24EF-4323-B682-6D534A40D668",
     "items": [
@@ -49230,7 +49230,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI FX",
+    "modelo": "FX",
     "marca": "NISSAN",
     "id": "09E5930C-B5CA-475D-A5C5-B6CB137B386D",
     "items": [
@@ -49323,7 +49323,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI G37 SEDAN",
+    "modelo": "G37 SEDAN",
     "marca": "NISSAN",
     "id": "0ECF8406-DC7D-40CC-B780-3813C4E3F3F6",
     "items": [
@@ -49424,7 +49424,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "138086D6-4A21-48C5-85FC-F6E46288CDF2",
     "items": [
@@ -49543,7 +49543,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "1B72D453-5915-48ED-860A-7724E87D7BA8",
     "items": [
@@ -49683,7 +49683,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "264F73F5-C238-4062-A85D-2C8C02DD776B",
     "items": [
@@ -49934,7 +49934,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "2C91A5A6-FCC0-45A6-9857-738BE9F82040",
     "items": [
@@ -50124,7 +50124,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "3624A81E-7C52-456F-BA20-9E7530A5D2E8",
     "items": [
@@ -50276,7 +50276,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI JX",
+    "modelo": "JX",
     "marca": "NISSAN",
     "id": "3ECD75B3-DB1E-4ADB-8335-9126134BEECB",
     "items": [
@@ -50310,7 +50310,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI QX",
+    "modelo": "QX",
     "marca": "NISSAN",
     "id": "42396404-94BE-46FA-B421-79AE4919654F",
     "items": [
@@ -50864,7 +50864,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI G37 COUPE",
+    "modelo": "G37 COUPE",
     "marca": "NISSAN",
     "id": "5BF3B0F5-38B8-4A94-AF94-0D1E56A84C61",
     "items": [
@@ -51135,7 +51135,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "652F4525-F100-4578-B468-679CF28206E8",
     "items": [
@@ -51661,7 +51661,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI M37",
+    "modelo": "M37",
     "marca": "NISSAN",
     "id": "893C0BAB-D66F-4C9A-BA98-0BE83164E566",
     "items": [
@@ -51751,7 +51751,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "MINI COUNTRYMAN",
+    "modelo": "COUNTRYMAN",
     "marca": "MINI",
     "id": "8C70FD7C-BD1D-4415-950B-A982D7C4A446",
     "items": [
@@ -52094,7 +52094,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "MINI CONVERTIBLE",
+    "modelo": "CONVERTIBLE",
     "marca": "MINI",
     "id": "9E196BBA-89E1-4239-95CD-A6B0727F9CD5",
     "items": [
@@ -52299,7 +52299,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI G SEDAN",
+    "modelo": "G SEDAN",
     "marca": "NISSAN",
     "id": "A9E73B43-FCDA-47DA-9718-1F7C45C19488",
     "items": [
@@ -52475,7 +52475,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI G COUPE",
+    "modelo": "G COUPE",
     "marca": "NISSAN",
     "id": "B08E91AD-6FF6-43BB-A1EF-04E1BCB42802",
     "items": [
@@ -52742,7 +52742,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "MINI CLUBMAN",
+    "modelo": "CLUBMAN",
     "marca": "MINI",
     "id": "C0E5C2CF-FA89-43E8-A102-00966ED0D6F8",
     "items": [
@@ -53640,7 +53640,7 @@
   {
     "motor": "",
     "anio": "2013",
-    "modelo": "INFINITI M",
+    "modelo": "M",
     "marca": "NISSAN",
     "id": "E7511BA1-5BE8-4A5C-AE22-14D31C015858",
     "items": [
@@ -54083,7 +54083,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "MINI COOPER CHILI",
+    "modelo": "COOPER CHILI",
     "marca": "MINI",
     "id": "008544AA-AB56-4212-86CA-FF98BB306428",
     "items": [
@@ -54253,7 +54253,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI Q45",
+    "modelo": "Q45",
     "marca": "NISSAN",
     "id": "0B262F8B-F47F-4CE1-B1AF-7DB24D7F9594",
     "items": [
@@ -54489,7 +54489,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI JX",
+    "modelo": "JX",
     "marca": "NISSAN",
     "id": "13D963DF-2A32-4D24-A230-651E26131D42",
     "items": [
@@ -55534,7 +55534,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI G COUPE",
+    "modelo": "G COUPE",
     "marca": "NISSAN",
     "id": "463F4F2C-2538-4B2F-8BA8-18400C209056",
     "items": [
@@ -55610,7 +55610,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "MINI COOPER SALT",
+    "modelo": "COOPER SALT",
     "marca": "MINI",
     "id": "4A1ECEEF-BCD5-4CC8-B3E9-B7890BC95B1A",
     "items": [
@@ -55644,7 +55644,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "CITY FORTWO",
+    "modelo": "CITY FOR 2",
     "marca": "SMART",
     "id": "4B915F18-9A97-459E-815C-7AB7B2DA9C8B",
     "items": [
@@ -55678,7 +55678,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "MINI CLUBMAN",
+    "modelo": "CLUBMAN",
     "marca": "MINI",
     "id": "4D86257E-7B1C-4CD8-A17E-02A6078BBA7A",
     "items": [
@@ -56127,7 +56127,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "MINI COOPER PEPPER",
+    "modelo": "COOPER PEPPER",
     "marca": "MINI",
     "id": "6A4A6A87-B83B-456A-A95F-15136023E047",
     "items": [
@@ -56407,7 +56407,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI G SEDAN",
+    "modelo": "G SEDAN",
     "marca": "NISSAN",
     "id": "7C9FEBC4-65F8-4783-A068-248D52A55B4D",
     "items": [
@@ -56784,7 +56784,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI I30",
+    "modelo": "I30",
     "marca": "NISSAN",
     "id": "8EAD0F3F-9A86-43DF-A20B-56C262730032",
     "items": [
@@ -57452,7 +57452,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI FX",
+    "modelo": "FX",
     "marca": "NISSAN",
     "id": "A9C91000-3E66-43B8-A7DF-838A7D69BE29",
     "items": [
@@ -57835,7 +57835,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "MINI COUNTRYMAN",
+    "modelo": "COUNTRYMAN",
     "marca": "MINI",
     "id": "B3034749-95C0-4488-BFA4-74D2602E183D",
     "items": [
@@ -58419,7 +58419,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI QX",
+    "modelo": "QX",
     "marca": "NISSAN",
     "id": "D9CB400E-C98E-4A34-8071-D2F201BCACAE",
     "items": [
@@ -58847,7 +58847,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "MINI CONVERTIBLE",
+    "modelo": "CONVERTIBLE",
     "marca": "MINI",
     "id": "E7B9EF96-8CAB-4F56-BEED-34100984C282",
     "items": [
@@ -58924,7 +58924,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI M37",
+    "modelo": "M37",
     "marca": "NISSAN",
     "id": "F2C6C759-E083-4830-940F-262859487736",
     "items": [
@@ -59001,7 +59001,7 @@
   {
     "motor": "",
     "anio": "2014",
-    "modelo": "INFINITI M",
+    "modelo": "M",
     "marca": "NISSAN",
     "id": "FCA8C416-89CA-4D80-B178-9862B4EDC0D0",
     "items": [

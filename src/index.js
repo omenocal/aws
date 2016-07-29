@@ -151,6 +151,11 @@ function getModel(intent, session, callback) {
                 session.attributes.REPEAT_MESSAGE = responses.Car.AskModel.ask;
                 respond.withPlainText(responses.Car.AskModel, callback);
                 return;
+            } else if(model === 'mg' || model === 'gmc' || model === 'vw') {
+                session.attributes.BRAND = model;
+                session.attributes.REPEAT_MESSAGE = responses.Car.AskModel.ask;
+                respond.withPlainText(responses.Car.AskModel, callback);
+                return;
             }
         }
 
@@ -260,12 +265,12 @@ function getBattery(intent, session, callback) {
 
 function queryAgainstDataBase(session, brand, model, year, callback) {
     storageDynamoDB.load(session, brand, model, year, function (item) {
-        if(item.length === 0) {
-            session.attributes.BATTERIES = undefined;
-            session.attributes.BRAND = undefined;
-            session.attributes.MODEL = undefined;
-            session.attributes.YEAR = undefined;
+        session.attributes.BATTERIES = undefined;
+        session.attributes.BRAND = undefined;
+        session.attributes.MODEL = undefined;
+        session.attributes.YEAR = undefined;
 
+        if(item.length === 0) {
             session.attributes.REPEAT_MESSAGE = responses.Car.NoExist.ask;
             respond.withPlainText(responses.Car.NoExist, callback);
             return;
@@ -281,26 +286,19 @@ function queryAgainstDataBase(session, brand, model, year, callback) {
                 reprompt:   "What other battery would you like to look for?"
             };
 
-            session.attributes.BATTERIES = undefined;
-            session.attributes.BRAND = undefined;
-            session.attributes.MODEL = undefined;
-            session.attributes.YEAR = undefined;
-            
             respond.withPlainText(speech, callback);
         } else {
-            var askString = "I'm aware of " + item.length + " brands that fit your car specifications. "
+            var askString = "There are " + item.length + " brands that fit your car specifications: " +
+                            brand + ", " + model + ", " + year + ". They are ";
 
             for (var i = 0; i < item.length - 1; i++) {
-                askString += item[i].Title + ", ";
+                askString += item[i].Title + " " + item[i].Description + ". ";
             }
 
-            askString += "and " + item[item.length - 1].Title + ". What battery brand do you prefer?";
+            askString += "And " + item[item.length - 1].Title + " " + item[item.length - 1].Description +
+                         ". What other battery would you like to look for?";
 
             session.attributes.REPEAT_MESSAGE = askString;
-            session.attributes.BATTERIES = item;
-            session.attributes.BRAND = brand;
-            session.attributes.MODEL = model;
-            session.attributes.YEAR = year;
 
             var speech = {
                 ask: askString,

@@ -3,14 +3,17 @@
 206
 206 cc
 207
+3 sedan
 307
 308
 350z ta
 350z touring tm
 4 runner
 407
-528I
-535I
+528i
+535i
+6 grand sport
+6 sport
 607 delantera
 607 trasera de servicio
 a3
@@ -37,7 +40,8 @@ blackwood
 bonneville
 bora
 bora sportwagen
-C70
+bravo
+c70
 camry
 canyon
 cavalier
@@ -45,8 +49,8 @@ celica
 century
 chevy
 cheyenne
-city forfour
-city fortwo
+city for 2
+city for 4
 civic
 civic coupe
 clio
@@ -54,6 +58,9 @@ clio sport
 club wagon
 colorado
 continental
+cooper 
+cooper pepper
+cooper salt
 cordoba
 corolla
 corsa
@@ -67,11 +74,11 @@ eclipse
 ecosport
 element
 envoy
-equinox V6
+equinox v6
 escalade esv
 escalade ext
 escape l4
-escape V6
+escape v6
 eurovan
 excursion
 expedition king ranch
@@ -79,7 +86,6 @@ expedition max
 explorer sport trac
 express cargo van
 express passenger van
-fiat bravo
 fiesta
 five hundred
 fletwood
@@ -89,9 +95,9 @@ freelander
 freestar
 frontier
 fusion
-G4
-G5
-G6
+g4
+g5
+g6
 galant
 golf
 grand am
@@ -100,53 +106,43 @@ grand prix v6
 grand prix v8
 grand raid
 grand vitara
-H1
-H2
+h1
+h2
 hiace
 hilux
+i30
 ibiza
 ikon
 impala
 impreza wrx
-infiniti i30
-infiniti q45
+jcw
 jetta
 jimmy
-KA
+ka
 kangoo
 laguna
 leon
 lesabre
 lobo harley davidson
 lobo king ranch
-LS
+ls
 lucino
 lupo
 luv
-M3
+m3
 malibu
 mariner
 mark lt
 mark viii
 maxima
-mazda 3 sedan
-mazda 6 grand sport
-mazda 6 sport
-MDX
+mdx
 megane ii
 meriva
-MG TF
-MG ZR
-MG ZT
 micra
-mini cooper chili
-mini cooper pepper
-mini cooper salt
-mini jcw
 mondeo
 montero limited
 montero sport xls
-MR2 spyder
+mr2 spyder
 murano
 mustang
 odyssey
@@ -168,21 +164,23 @@ pointer pick up
 polo
 porter diesel
 porter gasolina
+q45
 quest
-R75 comfort sedan
-R75 tourer station wagon
+r75 comfort sedan
+r75 tourer station wagon
 ranger
-RAV4
+rav4
 regal
 ridgeline
-RL
+rl
 rodeo
 rogue
-S3
-S4
-S40
-S60
-S80
+rouge
+s3
+s4
+s40
+s60
+s80
 sable
 savana
 scenic
@@ -204,7 +202,7 @@ sonora
 space star comfort
 space star family
 sportvan
-SRX
+srx
 stilo
 suburban
 sunfire
@@ -212,9 +210,10 @@ swift
 tacoma l4
 tacoma v6
 taurus
+tf
 tigra
 titan
-TL
+tl
 toledo
 tornado
 touareg
@@ -225,24 +224,26 @@ tribeca
 tsubame
 tsuru gsi
 tsuru gsii
-TSX
+tsx
 tundra
 uplander
 urvan
-V40
-V50
-V70
-V90
+v40
+v50
+v70
+v90
 vectra
 venture
 windstar
-X3
-XC80
-XC90
+x3
+xc80
+xc90
 yaris hatchback
 yaris sedan
 yukon
-Z3
-Z4
-Z4 M
+z3
+z4
+z4 m
 zafira
+zr
+zt

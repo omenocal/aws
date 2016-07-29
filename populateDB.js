@@ -73,7 +73,7 @@ function insertItems(i, numberOfItemToExport, allItems) {
                 var params = {
                     TableName: "Cars",
                     Item: {
-                        "CarId": "" + i,
+                        "CarId": car.id,
                         "Brand": car.marca.toLowerCase(),
                         "Model": car.modelo.toLowerCase(),
                         "Year": car.anio,
