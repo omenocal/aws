@@ -58,7 +58,7 @@ SmartBic.prototype.intentHandlers = {
     },
     "ModelIntent": function (intent, session, callback) {
         session.attributes.PAUSED = undefined;
-        getModel(intent, session, callback);
+        getModel(intent.slots.Model.value, session, callback);
     },
     "YearIntent": function (intent, session, callback) {
         session.attributes.PAUSED = undefined;
@@ -117,7 +117,7 @@ function getWelcomeMessage(session, callback) {
 /**
  * Getting brand from users prompt
  */
-function getBrand(intent, session, callback) {                
+function getBrand(intent, session, callback) {
     if(intent.slots.Brand.value) {
         var brand = intent.slots.Brand.value.toLowerCase();
 
@@ -141,11 +141,11 @@ function getBrand(intent, session, callback) {
 /**
  * Getting model from users prompt
  */
-function getModel(intent, session, callback) {
+function getModel(modelValue, session, callback) {
     if(session.attributes.BRAND === undefined) {
         //  BMW is the only one value which is not recognized by the Brand method
-        if(intent.slots.Model.value) {
-            var model = intent.slots.Model.value.toLowerCase();
+        if(modelValue) {
+            var model = modelValue.toLowerCase();
             if(model === 'bmw' || model === 'mw') {
                 session.attributes.BRAND = 'bmw';
                 session.attributes.REPEAT_MESSAGE = responses.Car.AskModel.ask;
@@ -164,13 +164,41 @@ function getModel(intent, session, callback) {
         return;
     }
 
-    if(intent.slots.Model.value) {
-        var model = intent.slots.Model.value.toLowerCase();
+    if(modelValue) {
+        var model = modelValue.toLowerCase();
 
         if (isEmpty(model)) {
             session.attributes.REPEAT_MESSAGE = responses.Car.ModelNotUnderstood.ask;
             respond.withPlainText(responses.Car.ModelNotUnderstood, callback);
             return;
+        }
+
+        if(model === '200 6cc') {
+            model = '206 cc';
+        } else if(model === '350 z ta') {
+            model = '350z ta';
+        } else if(model === '350 z touring tm') {
+            model = '350z touring tm';
+        } else if(model === 'corola') {
+            model = 'corolla';
+        } else if(model === 'rav 4') {
+            model = 'rav4';
+        } else if(model === 'accord 6cil') {
+            model = 'accord 6 cil';
+        } else if(model === 'xc 60') {
+            model = 'XC60';
+        } else if(model === 'xc 80') {
+            model = 'XC80';
+        } else if(model === 'xc 90') {
+            model = 'XC90';
+        } else if(model === 'city fortwo') {
+            model = 'city for 2';
+        } else if(model === 'city forfour') {
+            model = 'city for 4';
+        } else if(model === 'i 30') {
+            model = 'i30';
+        } else if(model === 'q 45') {
+            model = 'q45';
         }
 
         session.attributes.MODEL = model;
@@ -237,11 +265,17 @@ function getYear(intent, session, callback) {
  * Getting battery suggestions from DynamoDB depending on filter fields
  */
 function getBattery(intent, session, callback) {
+    if(intent.slots.Model.value && intent.slots.Year.value &&
+        intent.slots.Model.value === '5I' && intent.slots.Year.value === '128') {
+        getModel('528i', session, callback);
+        return;
+    }
+
     session.attributes.BATTERIES = undefined;
     session.attributes.BRAND = undefined;
     session.attributes.MODEL = undefined;
     session.attributes.YEAR = undefined;
-                
+
     if(intent.slots.Brand.value && intent.slots.Model.value && intent.slots.Year.value) {
         var brand = intent.slots.Brand.value.toLowerCase();
         var model = intent.slots.Model.value.toLowerCase();
@@ -264,18 +298,19 @@ function getBattery(intent, session, callback) {
 
 
 function queryAgainstDataBase(session, brand, model, year, callback) {
-    storageDynamoDB.load(session, brand, model, year, function (item) {
+    storageDynamoDB.load(session, brand, model, year, function (itemArray) {
         session.attributes.BATTERIES = undefined;
         session.attributes.BRAND = undefined;
         session.attributes.MODEL = undefined;
         session.attributes.YEAR = undefined;
 
-        if(item.length === 0) {
+        if(itemArray === undefined) {
             session.attributes.REPEAT_MESSAGE = responses.Car.NoExist.ask;
             respond.withPlainText(responses.Car.NoExist, callback);
             return;
         }
 
+        var item = itemArray.Battery;
         if(item.length === 1) {
             session.attributes.REPEAT_MESSAGE = "The " + item[0].Title + " battery for a " +
                                                 brand + ", " + model + ", " + year + " is " +

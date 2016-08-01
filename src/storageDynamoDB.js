@@ -39,8 +39,8 @@ var storageDynamoDB = (function () {
                     callback([]);
                 } else {
                     console.log('brand = ' + brand + "; model = " + model + "; year = " + year);
-                    console.log('get car from dynamodb=' + JSON.stringify(data.Items[0].Battery));
-                    callback(data.Items[0].Battery);
+                    console.log('get car from dynamodb=' + JSON.stringify(data.Items[0]));
+                    callback(data.Items[0]);
                 }
             });
         },
